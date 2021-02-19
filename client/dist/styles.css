@@ -1,9 +1,16 @@
-body {
-  background-color: aqua;
+.full-app {
+  background-color: black;
+  color: white;
 }
-.butter {
-  height: 300px;
-  width: 300px;
-  position: absolute;
-  background-color: azure;
+.banner:hover {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid black;
+}
+.banner {
+  display: flex;
+  font-size: xx-large;
+  justify-content: center;
+  padding-top: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }

@@ -1,15 +1,15 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
+import Banner from './components/Banner.jsx';
 
-const App = () => {
-  return (
-    <div>
-      <Button />
-      <div className="butter">
-        Hello World!
-        </div>
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="full-app">
+        <Banner />
+      </div>
+    );
+  }
   //hello from windows!
 }
 
