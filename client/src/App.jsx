@@ -1,29 +1,54 @@
-import React from 'react';
-import ButtonToolbar from 'react-bootstrap/ButtonToolbar'
-import ButtonGroup from 'react-bootstrap/ButtonGroup'
-import Button from 'react-bootstrap/Button';
+import React, {useState} from 'react';
+import Tabs from 'react-bootstrap/Tabs';
+import Tab from 'react-bootstrap/Tab';
 import Banner from './components/Banner.jsx';
 
 class App extends React.Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      key: "home"
+    };
+    this.setKey = this.setKey.bind(this);
+  }
+
+  setKey(k) {
+    console.log('selected' + k);
+    this.setState({ key: k });
+  }
+
   render() {
     return (
-      <div className="full-app">
-        <Banner />
-        <ButtonToolbar aria-label="Toolbar with button groups">
-          <ButtonGroup className="mr-2" aria-label="First group">
-            <Button>1</Button> <Button>2</Button> <Button>3</Button> <Button>4</Button>
-          </ButtonGroup>
-          <ButtonGroup className="mr-2" aria-label="Second group">
-            <Button>5</Button> <Button>6</Button> <Button>7</Button>
-          </ButtonGroup>
-          <ButtonGroup aria-label="Third group">
-            <Button>8</Button>
-          </ButtonGroup>
-        </ButtonToolbar>
+      <div className="container">
+          <h1>React Bootstrap Tabs Example - ItSolutionStuff.com</h1>
+     
+          <Tabs
+            id="controlled-tab-example"
+            activeKey={this.state.key}
+            onSelect={(k) => this.setKey(k)}
+          >
+     
+            <Tab eventKey="home" title="Home">
+              <p>this is a home tab</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </Tab>
+            <Tab eventKey="profile" title="Profile">
+              <p>this is profile tab</p>
+            </Tab>
+            <Tab eventKey="setting" title="Setting">
+              <p>this is setting tab</p>
+            </Tab>
+         
+          </Tabs>
+     
       </div>
     );
   }
-  //hello from windows!
 }
-
 export default App;
