@@ -1,5 +1,4 @@
 .full-app {
-  background-color: black;
   color: white;
 }
 .banner:hover {
@@ -9,6 +8,8 @@
   border-bottom: 1px solid black;
 }
 .banner {
+  background-color: black;
+  color: white;
   padding-left: 15px;
   width: 100vw;
   border-top: 1px solid white;
@@ -20,7 +21,8 @@
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.tabs {
-  color: aliceblue !important;
-  background-color: white !important;
+.landing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
