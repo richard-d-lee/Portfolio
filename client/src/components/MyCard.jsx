@@ -5,7 +5,8 @@ import Button from 'react-bootstrap/Button';
 function MyCard(props) {
   return (
     <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src="https://i.imgur.com/5UJcfuc.jpeg" />
+      <Card.Img variant="top" className="card-image" src="https://i.imgur.com/5UJcfuc.jpeg" />
+      <div className="image"></div>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <Card.Text>
