@@ -17,12 +17,15 @@
   border-bottom: 1px solid black;
 }
 
-.card-image:hover {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2c/Rotating_earth_%28large%29.gif");
+.footer {
+  background-color: black;
+  color: white;
+  padding: 30px 0px 25px 0px;
 }
 
 .landing {
-  background-color: black;
+  background-image: url('https://i.imgur.com/5UJcfuc.jpg');
+  background-position-y: center;
   padding: 0px 80px 0px 80px;
   display: flex;
   flex-direction: row;
@@ -35,8 +38,10 @@
 }
 
 .resume {
+  padding-top: 30px;
+  padding-bottom: 30px;
   background-color: #333333;
-  border-top: white;
-  border-bottom: white;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
   color: white;
 }

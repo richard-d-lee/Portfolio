@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
+import Button from 'react-bootstrap/Button';
 
 function Resume(props) {
     return (
         <div className="resume">
             <center>
-                <label>
-                    Resume
-                </label>
+                <Button variant="secondary" size="lg">Download Resume</Button>
             </center>
         </div>
     )
