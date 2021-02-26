@@ -28,10 +28,15 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.image {
-  background: url("https://imgur.com/gallery/u3E0cwT");
-}
 
 .my-card {
+  background-color: black;
   width: 400px;
+}
+
+.resume {
+  background-color: #333333;
+  border-top: white;
+  border-bottom: white;
+  color: white;
 }

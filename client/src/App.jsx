@@ -1,6 +1,8 @@
 import React from 'react';
 import Banner from './components/Banner.jsx';
 import Landing from './components/Landing.jsx';
+import Resume from './components/Resume.jsx';
+import Footer from './components/Footer.jsx';
 
 
 class App extends React.Component {
@@ -16,7 +18,8 @@ class App extends React.Component {
       <div>
         <Banner />
         <Landing />
-        <Banner />
+        <Resume />
+        <Footer />
       </div>
     );
   }

@@ -13,6 +13,14 @@ module.exports = {
         }
       },
       {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
+      },
+      {
         // For pure CSS (without CSS modules)
         test: /\.css$/i,
         exclude: /\.module\.css$/i,

@@ -5,9 +5,9 @@ import MyCard from './MyCard.jsx'
 function Landing(props) {
   return (
     <div className="landing">
-      <MyCard />
-      <MyCard />
-      <MyCard />
+      <MyCard link="About Me"/>
+      <MyCard link="Portfolio"/>
+      <MyCard link="Artwork"/>
     </ div>
   )
 }
