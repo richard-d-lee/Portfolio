@@ -25,6 +25,10 @@
   flex-direction: column;
 }
 
+.full-card {
+  padding: 80px 0px 79px 0px;
+}
+
 .landing {
   background-image: url('https://i.imgur.com/5UJcfuc.jpg');
   background-position-y: center;
