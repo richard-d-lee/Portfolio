@@ -6,7 +6,7 @@ import gif from './gif.gif'
 function MyCard(props) {
   return (
     <div className="full-card">
-      <Card className="my-card" style={{ width: '25rem', backgroundColor: "black" }}>
+      <Card className="my-card" style={{ width: '100%', backgroundColor: "black" }}>
         <Card.Img variant="top" className="card-image" src={gif} style={{ height: '25rem'}}/>
         <Card.Body style={{ backgroundColor: '#333333'}}>
           <center>

@@ -3,8 +3,12 @@ import React, { useState } from 'react';
 function Banner(props) {
   return (
     <div className="banner">
-        <label id="name">Richard Lee</label>
+      <center>
+        <label id="name">Richard Lee | Denver, CO | Open to remote work or relocation.</label>
+      </center>
+      <center>
         <label>Node.js, React, SQL and no-SQL, AWS</label>
+      </center>
     </div>
   )
 }
