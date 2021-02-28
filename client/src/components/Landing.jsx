@@ -5,7 +5,7 @@ function Landing(props) {
   return (
     <div className="landing">
       <MyCard link="About Me"/>
-      <MyCard link="Portfolio"/>
+      <MyCard link="Projects"/>
       <MyCard link="Artwork"/>
     </ div>
   )
