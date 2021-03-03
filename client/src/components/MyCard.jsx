@@ -7,12 +7,11 @@ function MyCard(props) {
   return (
     <div className="full-card">
       <Card className="my-card" style={{ width: '100%', backgroundColor: "black" }}>
-        <Card.Img variant="top" className="card-image" src={gif} style={{ width: '25rem', height: 'auto'}}/>
-        <Card.Body style={{ backgroundColor: '#333333'}}>
+        <Card.Img variant="top" className="card-image" src={gif} style={{ width: '25rem', height: 'auto'}}>
+          </Card.Img>
           <center>
-            <Button variant="secondary">{props.link}</Button>
+            <Button className="button" variant="light">{props.link}</Button>
           </center>
-        </Card.Body>
       </Card>
     </div>
   )
