@@ -12,13 +12,14 @@ class App extends React.Component {
     this.state = {
       screen: 'landing',
     };
+    this.handleAbout = controllers.handleAbout.bind(this);
   }
 
   render() {
     return (
-      <div>
+      <div onClick={() => {console.log('hello')}}>
         <Banner />
-        <Landing clicker={controllers.handleAbout.bind(this)}/>
+        <Landing clicker={this.handleAbout}/>
         <Resume />
         <Footer />
       </div>
